@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "JorgeBen",
+  "password": "OHomemDaGravataFlorida",
+  "database": "test",
+  "migrations": ["migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "migrations"
+  },
+  "entities": [
+    "src/entities/*.ts"
+  ],
+  "logging": true
+}

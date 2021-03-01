@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "7a646bd5-d8e1-40cf-b7a1-c78eb48c41ed",
+		"name": "Fernando Becker test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /restaurant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurant"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "me",
+							"description": "Restaurant name (partial, case insensitive)",
+							"disabled": true
+						},
+						{
+							"key": "cuisine",
+							"value": "me",
+							"description": "Cuisine name (partial, case insensitive)",
+							"disabled": true
+						},
+						{
+							"key": "customerRating",
+							"value": "5",
+							"description": "Minimum customer rating",
+							"disabled": true
+						},
+						{
+							"key": "distance",
+							"value": "6",
+							"description": "Maximum distance",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "20",
+							"description": "Maximum price",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

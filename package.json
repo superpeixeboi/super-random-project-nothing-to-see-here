@@ -1,0 +1,33 @@
+{
+  "name": "fernando-becker-random-test",
+  "version": "1.0.0",
+  "description": "Fernando Becker's Random Test",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "migration": "ts-node ./node_modules/typeorm/cli.js migration:run",
+    "seed": "ts-node ./data/seed.ts",
+    "migration:revert": "ts-node ./node_modules/typeorm/cli.js migration:revert",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "author": "Fernando Becker (fernandobbecker@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.14.8",
+    "ajv": "^7.1.1",
+    "body-parser": "^1.19.0",
+    "class-validator": "^0.12.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.1.1",
+    "typeorm": "^0.2.31",
+    "typescript": "^4.2.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.2"
+  }
+}

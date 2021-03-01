@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  test-postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=JorgeBen
+      - POSTGRES_PASSWORD=OHomemDaGravataFlorida
+      - POSTGRES_DB=test
+    healthcheck:
+      interval: 10s
+      timeout: 5s
+      retries: 5
